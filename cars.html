@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="google-site-verification"
+      content="NX726YPv1hqM-XSDe2xKY7ULtOmlABVr5l2K6zq640s"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      GPS/ГЛОНАСС Мониторинг Транспорта | Отслеживание, Блокировка, Датчик
+      Топлива
+    </title>
+    <meta
+      name="description"
+      content="Предлагаем GPS/ГЛОНАСС систему мониторинга транспорта, которая позволит отследить местонахождение, контроль топлива и геопозицию в режиме онлайн, блокировка двигателя. Благодаря GPS трекеру вы сможете контролировать ваш транспорт в любое время и в любом месте. Доступны сервисы Wialon и Gelios."
+    />
+    <meta name="googlebot" content="index" />
+    <meta name="yandex" content="index" />
+    <meta name="robots" content="max-image-preview:large" />
+    <!-- OG -->
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://gnss-msk.ru/" /> -->
+    <meta
+      property="og:title"
+      content="GPS/ГЛОНАСС Мониторинг Транспорта | Отслеживание, Блокировка, Датчики Топлива"
+    />
+    <meta
+      property="og:description"
+      content="Управляйте своим транспортом эффективно с нашими решениями для мониторинга. Отслеживание, контроль топлива, GPS трекеры, установка Глонасс и GPS - мы предлагаем комплексные решения для вашего бизнеса"
+    />
+    <meta
+      property="og:image"
+      content="https://gnss-msk.ru/images/nova-logo.png"
+    />
+    <!-- /OG -->
+
+    <!-- canonical -->
+    <!-- <link rel="canonical" href="https://gnss-msk.ru/" /> -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      );
+
+      ym(97281382, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/97281382"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/img/favicon192x192.png"
+      type="image/x-icon"
+    />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+
+    <!-- Toastify -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <!-- email -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('pybbIgWHiRNUsGvKo');
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar" id="navbar">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img
+            src="img/nova-logo-text-grey.png"
+            width="220"
+            class="nav-logo"
+            alt="Nova Glonass"
+          />
+          <button type="button" title="Меню" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links" id="nav-links">
+          <!-- single link -->
+          <li>
+            <a href="index.html" aria-label="Главная" class="nav-link"
+              >Главная</a
+            >
+          </li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li>
+            <a
+              href="#contacts"
+              aria-label="Контакты"
+              class="scroll-link nav-link"
+              >Контакты</a
+            >
+          </li>
+          <!-- end of single link -->
+          <!-- single link -->
+          <li class="dropdown">
+            <a
+              href="javascript:void(0)"
+              aria-label="Грузовые"
+              class="nav-link scroll-link dropdown-btn"
+              >Услуги <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="cars.html">Легковые</a>
+              <a href="trucks.html">Грузовые</a>
+              <a href="spec.html">Спецтехника</a>
+              <a href="mayak.html">Маяк</a>
+              <a href="rnis.html">РНИС</a>
+              <a href="articles.html">Статьи</a>
+            </div>
+          </li>
+          <!-- end of single link -->
+        </ul>
+        <!-- end of nav links -->
+      </nav>
+      <!-- End of Navbar -->
+    </header>
+    <!-- End of Header  -->
+    <main>
+      <!-- 
+      =============== 
+      HERO
+      ===============
+      -->
+
+      <section>
+        <div class="section-title hero-cars">
+          <h1>ЛЕГКОВОЙ ТРАНСПОРТ</h1>
+        </div>
+        <div class="hero-container">
+          <div class="cars-banner"></div>
+          <aside class="accordion-section">
+            <h2>Возможности</h2>
+
+            <button class="accordion">
+              Контроль скорости <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>
+                Вы можете настроить верхнюю границу. В случае, если водитель
+                будет превышать скорость, Вы будете получать оповещения.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Отчет по маршрутам <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>
+                Установка мониторинга транспорта дисциплинирует водителей и
+                количество поездок по личным делам, значительно сокращается.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Блокировка двигателя <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>
+                Если Вы сдаете машину в аренду и не получили оплату от водителя,
+                нажатием одной кнопки, Вы можете заблокировать дальнейшее
+                движение транспорта.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Состояние аккумулятора <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>Актуальная информация по заряду аккумулятора.</p>
+            </div>
+
+            <button class="accordion">
+              Техническая поддержка 24/7 <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>
+                Наши специалисты всегда на связи и в этом мы лучшие. Быстрое
+                реагирование на возникший вопрос и его решение.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Хранение отчетов 12 месяцев <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>
+                В любой момент Вы можете ознакомиться с ответами,
+                проанализировать работу Ваших сотрудников.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Удобное мобильное приложение <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>
+                Отслеживать транспортное средство Вы можете не только с
+                компьютера, но и с Вашего мобильного устройства.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Онлайн слежение за транспортом <i class="fas fa-plus"></i>
+            </button>
+            <div class="panel">
+              <p>
+                Установка мониторинга транспорта дисциплинирует водителей и
+                количество поездок по личным делам, значительно сокращается.*
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Advantages -->
+      <section class="section advantages" id="featured">
+        <!-- section-title -->
+        <div class="section-title section-title-2 section-title-mobile">
+          <h2>Главные выгоды для вас</h2>
+        </div>
+        <!-- end of section-title -->
+        <div class="advantages-center">
+          <!-- single advantage -->
+          <article class="advantage-block">
+            <div class="advantages-icon">
+              <img
+                class="advantages-img"
+                src="img/control.png"
+                alt="Контроль"
+              />
+            </div>
+            <h4 class="advantages-title">Контроль</h4>
+            <p class="advantages-text">Повышение дисциплины водителей</p>
+          </article>
+          <!-- enf of single advantages -->
+          <!-- single advantages -->
+          <article class="advantage-block">
+            <div class="advantages-icon">
+              <img
+                class="advantages-img"
+                src="img/economy.png"
+                alt="Экономия"
+              />
+            </div>
+            <h4 class="advantages-title">Экономия</h4>
+            <p class="advantages-text">Без скрытых платежей</p>
+          </article>
+          <!-- enf of single advantages -->
+          <!-- single advantages -->
+          <article class="advantage-block">
+            <div class="advantages-icon">
+              <img
+                class="advantages-img"
+                src="img/support.png"
+                alt="Техподдержка"
+              />
+            </div>
+            <h4 class="advantages-title">Техподдержка</h4>
+            <p class="advantages-text">24/7</p>
+          </article>
+          <!-- enf of single advantages -->
+        </div>
+      </section>
+      <!-- End of advantages -->
+
+      <!-- Taxi section -->
+      <section class="section pricelist-section">
+        <div class="section-title pricelist-title">
+          <h2>Стоимость</h2>
+        </div>
+        <div class="section-grid">
+          <!-- about info -->
+          <article class="about-info">
+            <ul>
+              <li>
+                Мониторинг транспорта и блокировка двигателя -
+                <span>6500 ₽</span>
+              </li>
+              <li>
+                В стоимость входит: трекер, установка, выезд в пределах Москвы
+              </li>
+              <li>Абонентская плата <span>390 ₽</span> в месяц</li>
+              <li>Гарантия на оборудование <span>12</span> месяцев!</li>
+            </ul>
+          </article>
+          <!-- car img wrapper -->
+          <article class="about-img">
+            <img
+              src="./img/car.png"
+              class="about-photo-car"
+              alt="Легковая машина"
+            />
+          </article>
+        </div>
+        <!-- <a
+              class="btn about-btn modal-btn"
+              aria-label="Кнопка формы"
+              id="modalBtn"
+              >Узнать больше</a
+            > -->
+      </section>
+      <!-- End of Taxi section -->
+
+      <!-- Promotion -->
+      <section class="section promo-img">
+        <div class="promo-info">
+          <h2><span>Установи</span> оборудование в этом месяце</h2>
+          <p>
+            И получи 2 месяца использования без абонентской платы в
+            <span>подарок</span>!
+          </p>
+          <div class="btn-center">
+            <a href="form.html" class="btn promo-btn"
+              >ОСТАВИТЬ ЗАЯВКУ НА УСТАНОВКУ</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- End of Promotion -->
+
+      <!-- Map -->
+      <section class="section map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=172035268845"
+          style="border: 0"
+          title="yandex map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <!-- End of Map -->
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="section footer" id="contacts">
+      <!-- logo -->
+      <article class="footer-logo ord1">
+        <img
+          src="img/nova-logo.png"
+          width="100"
+          class="logo"
+          alt="NovaGlonass"
+        />
+        <p class="copyright">
+          copyright &copy; Nova Glonass <span id="date"></span> <br />
+          все права защищены
+        </p>
+        <!-- footer icons -->
+        <ul class="footer-icons">
+          <!-- single icon -->
+          <li>
+            <a
+              aria-label="Telegram"
+              title="Email"
+              target="_blank"
+              href="mailto:omakorlova@yandex.ru"
+              class="footer-icon"
+            >
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <li>
+            <a
+              aria-label="WhatsApp"
+              title="WhatsApp"
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=79157106798"
+              class="footer-icon"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <li>
+            <a
+              aria-label="Email"
+              title="Email"
+              target="_blank"
+              href="mailto:omakorlova@yandex.ru"
+              class="footer-icon"
+            >
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <li>
+            <a
+              aria-label="Позвонить"
+              title="Позвонить"
+              target="_blank"
+              href="tel:+79043522434"
+              class="footer-icon"
+            >
+              <i class="fa-solid fa-square-phone-flip"></i>
+            </a>
+          </li>
+          <!-- end of single icon -->
+        </ul>
+        <!-- end of footer icons -->
+      </article>
+      <!-- end of logo -->
+
+      <!-- about company -->
+      <article class="about-company ord2">
+        <h4 class="footer-title">О компании</h4>
+        <ul class="footer-list">
+          <li>
+            Телефон :
+            <a href="tel:+79043522434" aria-label="Номер телефона"
+              >+7 (904) 352-24-34</a
+            >
+          </li>
+          <li>
+            Email :
+            <a href="mailto:omakorlova@yandex.ru" aria-label="Электронная почта"
+              >omakorlova@yandex.ru</a
+            >
+          </li>
+          <li>Рабочие дни / часы : Пн - Вс / 09:00 - 21:00</li>
+          <li>
+            Адрес :
+            <a
+              href="https://yandex.ru/maps/org/omak_glonass/172035268845/?from=mapframe&ll=37.658499%2C55.747070&z=17"
+              target="_blank"
+              aria-label="Адрес"
+              >Николоямская ул., 38, стр. 1, Москва</a
+            >
+          </li>
+          <li>ИНН / ОГРН : <span>370105049616 / 319774600006810</span></li>
+          <li>
+            <a
+              href="privacyPolicy.html"
+              aria-label="Политика конфиденциальности"
+              class="confid"
+              >Политика конфиденциальности</a
+            >
+          </li>
+        </ul>
+      </article>
+      <!-- end of about company -->
+
+      <!-- solutions -->
+      <article class="footer-solutions ord3">
+        <h4 class="footer-title">Свяжитесь с нами!</h4>
+        <form class="footer-form">
+          <div class="footer-form-row">
+            <input
+              type="text"
+              placeholder="Имя"
+              id="name"
+              class="footer-form-input"
+              required
+            />
+          </div>
+          <div class="footer-form-row">
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              class="footer-form-input"
+              required
+            />
+          </div>
+          <div class="footer-form-row">
+            <input
+              type="tel"
+              placeholder="Номер телефона"
+              id="tel"
+              class="footer-form-input"
+            />
+          </div>
+
+          <div class="footer-form-row">
+            <textarea
+              class="footer-form-textarea"
+              placeholder="Комментарии"
+              id="message"
+            ></textarea>
+          </div>
+          <div class="footer-modal">
+            <button
+              type="button"
+              class="btn footer-button"
+              title="Отправить"
+              value="Отправить"
+              onclick="sendMail(), disable(this)"
+            >
+              Отправить
+            </button>
+          </div>
+        </form>
+      </article>
+      <!-- end of solutions -->
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Sidebar buttons -->
+
+    <a
+      class="phone-button"
+      aria-label="Позвонить"
+      title="Позвонить"
+      target="_blank"
+      href="tel:+79043522434"
+      ><i class="fa fa-phone-alt"></i
+    ></a>
+
+    <a
+      class="email-button"
+      aria-label="Email"
+      title="Email"
+      target="_blank"
+      href="mailto:omakorlova@yandex.ru"
+      ><i class="fa-regular fa-envelope"></i
+    ></a>
+
+    <a
+      class="whatsapp-button"
+      aria-label="WhatsApp"
+      title="WhatsApp"
+      target="_blank"
+      href="https://api.whatsapp.com/send/?phone=79157106798"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+
+    <a
+      class="telegram-button"
+      aria-label="Telegram"
+      title="Telegram"
+      target="_blank"
+      href="tel:+79043522434"
+      ><i class="fa-brands fa-telegram"></i
+    ></a>
+
+    <!-- End of Sidebar buttons -->
+
+    <!-- Toastify -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
